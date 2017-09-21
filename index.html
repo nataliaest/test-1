@@ -345,7 +345,7 @@
               body: formData
             };
 
-            fetch('process.php', fetchOptions)
+            fetch('process2.php', fetchOptions)
               .then(handleErrors)
               .then((res) => {
                 document.getElementById('results').innerHTML = '<div class="success">' + res + '</div>';
