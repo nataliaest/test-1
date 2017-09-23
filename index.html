@@ -348,11 +348,11 @@
             fetch('process.php', fetchOptions)
               .then(handleErrors)
               .then((res) => {
-                document.getElementById('results').innerHTML = '<div class="success">' + res + '</div>';
+                document.getElementById('results').innerHTML = '<div class="error">' + res + '</div>';
                 window.dispatchEvent(lead);
               })
               .catch((err) => {
-                document.getElementById('results').innerHTML = '<div class="error">' + err + '</div>';
+                document.getElementById('results').innerHTML = '<div class="sucess">' + err + '</div>';
                 window.dispatchEvent(error);
               })
 
